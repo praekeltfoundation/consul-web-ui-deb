@@ -35,7 +35,7 @@ grep "$ZIP_FILE" "$SHA_FILE" | sha256sum -c -
 # Hack sideloader to not build things in /var/praekelt - install files straight into the package directory
 PACKAGE_DIR="$WORKSPACE/package"
 mkdir -p "$PACKAGE_DIR"
-mkdir -p "$PACKAGE_DIR$BIN_DIR"
+mkdir -p "$PACKAGE_DIR$INSTALL_DIR"
 
 echo "Extracting $ZIP_FILE contents to $INSTALL_DIR in package..."
 unzip -qo -d "$PACKAGE_DIR$INSTALL_DIR" "$ZIP_FILE"
