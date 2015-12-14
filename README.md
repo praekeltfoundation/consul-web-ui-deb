@@ -9,6 +9,7 @@ The build package will include:
 * The open source Consul web UI static files
 
 #### Some notes:
+* The package name is `consul-web`.
 * The Consul web UI static files are installed to `/usr/share/consul-web`.
-* This package depends on the [Consul package](https://github.com/praekeltfoundation/consul-deb).
+* This package depends on the [`consul` package](https://github.com/praekeltfoundation/consul-deb).
 * **It is up to the user to configure Consul to actually use the installed web UI, i.e. set `-ui-dir=/usr/share/consul-web`**
